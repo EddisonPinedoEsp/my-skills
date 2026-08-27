@@ -31,6 +31,15 @@ Once a skill is installed, you can use it by invoking the `skill` tool in your c
 - To use the commit-message-writer skill, you would say: "Use the commit-message-writer skill to generate a commit message."
 - Opencode will then load the skill and follow its instructions.
 
+### Using a Skill in Antigravity
+In Antigravity, there is no need for a specific `/skill` command. You can simply ask the AI in natural language to use a skill, and it will dynamically find and read the corresponding `SKILL.md` file. 
+
+- **By Name**: "Usa la skill `commit-message-writer` para generar mi mensaje de commit."
+- **By Description**: "Usa la skill que sirve para hacer commits."
+- **Listing Skills**: "¿Qué skills tengo instaladas?" o "Muéstrame mis skills."
+
+Antigravity will automatically navigate to your `~/.opencode/skills/` (or project-specific skills folder), read the instructions, and apply them directly in the chat.
+
 ### Example: Creating a New Skill
 Let's create a simple skill for greeting:
 
