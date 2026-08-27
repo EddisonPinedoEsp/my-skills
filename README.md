@@ -60,3 +60,10 @@ Return a friendly greeting message. For example:
 ```
 
 Now you can use the skill by asking Opencode to use the greeting-skill.
+
+### Managing Project-Specific Skills
+To manage skills specific to this project, place them in the `.agents/skill/` directory. Each skill should have its own directory containing a `SKILL.md` file.
+
+- **Add a skill:** Create `.agents/skill/<skill-name>/SKILL.md` and define its behavior.
+- **Update a skill:** Edit the existing `SKILL.md` to refine its instructions or behavior.
+- **Share skills:** Commit the `.agents` directory to the repository so the team can use the same project-specific skills.
